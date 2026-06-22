@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f6fa;
+  color: #03044a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+.app {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  color: #03044a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.dark {
+  background-color: #0f1117;
+  color: #f5f6fa;
+}
+
+.app.dark .product-card {
+  background-color: #1a1d27;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.app.dark .product-info h3 {
+  color: #f5f6fa;
+}
+
+.app.dark .hero h1 {
+  color: #f5f6fa;
+}
+
+.app.dark .shop-title {
+  color: #f5f6fa;
+}

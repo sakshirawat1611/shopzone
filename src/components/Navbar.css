@@ -1,0 +1,138 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 64px;
+    background: linear-gradient(135deg, #03044a 0%, #4a0080 50%, #4F8EF7 100%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffffaa;
+    transition: color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: #ffffff;
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffffaa;
+    transition: color 0.2s ease;
+}
+
+.cart-icon:hover {
+    color: #ffffff;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #4F8EF7;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #ffffffaa;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #03044a 0%, #4a0080 50%, #4F8EF7 100%);
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    z-index: 99;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
